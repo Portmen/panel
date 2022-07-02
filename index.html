@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Главная</title>
+</head>
+<body>
+	<div id="main">
+		<br><br><br><br>
+		<div id="head">
+			<h1><h1>О КНЯЗЬ-ВЛАДИМИРСКОМ СОБОРЕ</h1></h1>
+			<!-- <h3></h3> -->
+		</div>
+		<br><br>
+		<div class="kat">
+			<div class="block"><div><a href="PLAN/PLAN.html">Размещение</a></div></div>
+			<div class="block"><div><a href="Hist/HISTORY.html">История</a></div></div>
+			<div class="block"><div><a href="Pam/PLAN.html">Памятники</a></div></div>
+		</div>
+	</div>
+</body>
+</html>
+
+<style>
+	@font-face {
+        font-family: Pochaevsk_Ucs;
+    src: url(pochaevsk.ttf);
+    }
+    @font-face {
+    font-family: AcademyACTT; /* Гарнитура шрифта */
+    src: url(ofont.ru_AcademyACTT.ttf); /* Путь к файлу со шрифтом */
+   }
+   @font-face {
+    font-family: Izhitsa; /* Гарнитура шрифта */
+    src: url(IzhitsaRegular.ttf); /* Путь к файлу со шрифтом */
+   }
+   * {
+   		font-family: Izhitsa;
+   }
+	span {
+		font-weight: 400;
+		font-family: sans-serif;
+	}
+
+
+	#head {
+		text-shadow: 0 0 25px black;
+		height: 20vh;
+		font-size: 200%;
+		/*border-top: 1.5px solid grey;*/
+		/*border-bottom: 1px solid grey;*/
+		box-shadow:  0 0 100px rgba(155, 155, 155, 0.5);
+	}
+
+	.block div a {
+		text-shadow: 0 0 25px black;
+		width: 22vw;
+		height: 125%;
+		border: 1.5px solid grey;
+		box-shadow:  0 0 50px rgba(155, 155, 155, 5);
+	}
+
+   .block div {
+   		/*padding: 15vh 10vw 15vh 10vw;*/
+   		height: 10vh;
+   		width: fit-content;
+   		justify-content: center;
+   }
+
+
+
+
+   #head {
+   	padding: 17px;
+
+   }
+	.block {
+		margin: 10px;
+		width: calc(100vw / 3 - 15vh);
+		height: 20%;
+	}
+
+	a {color: white; }
+
+	* {margin: 0; padding: 0; text-decoration: none;color: white;font-size: 120%;}
+
+	div#main {
+		/*background-color: #42aaff;*/
+		height: 100vh;
+		width: 100%;
+		text-align: center;
+		display: flex;
+		justify-content: space-evenly;
+		justify-items: center;
+		vertical-align: center;
+		flex-direction: column;
+	}
+
+div.block div a, div#head {background-color: rgba(0,0,0, 0.55); padding: 5px 10px 5px 10px;}
+
+div.block div a {border-radius: 10px;}
+
+	div.kat, div#head {
+		text-align: justify-content;
+		display: flex;
+		justify-content: center;
+		justify-items: center;
+		/*margin: 10vh;*/
+	}
+
+	div.kat {flex-direction: row; align-items: center;} div#head {flex-direction: column;}
+
+	body::before {
+	    content: '';
+	    position: fixed; /* Фиксируем на одном месте */
+	    left: 0; right: 0; /* Вся ширин */
+	    top: 0; bottom: 0; /* Вся высота */
+	    z-index: -10; /* Фон ниже текста */
+	    /* Параметры фона */
+	    background: url(Sobor.png) center / cover no-repeat;
+	    transition: 0s;
+	    /*filter: blur(3.5px); /* Размытие */*/
+   }
+
+	body {
+		background-color: black;
+		/*background-image: url(fon.jpg);*/
+		-moz-background-size: 100%; /* Firefox 3.6+ */
+	    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+	    -o-background-size: 100%; /* Opera 9.6+ */
+	    background-size: 100%; /* Современные браузеры */
+	    background-repeat:no-repeat;
+		background-position: center center;
+	}
+
+
+
+
+/**/
+
+   .block div, .block div a, #head, .block {
+   	display: flex;
+		justify-content: center;
+		align-items: center;
+   }
+</style>
